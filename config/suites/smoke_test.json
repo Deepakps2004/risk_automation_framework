@@ -1,0 +1,26 @@
+{
+    "suite_name": "RISK Smoke Test Suite",
+    "description": "Basic validation of critical RISK components",
+    "tasks": [
+        {
+            "task_name": "files_in_folder_task",
+            "config_file": "file_validation_config.json",
+            "description": "Validate required files exist"
+        },
+        {
+            "task_name": "cdw_extraction_task", 
+            "config_file": "cdw_config.json",
+            "description": "Extract trade data from CDW"
+        },
+        {
+            "task_name": "sql_validation_task",
+            "config_file": "sql_config.json", 
+            "description": "Validate SQL Server data"
+        },
+        {
+            "task_name": "mongo_validation_task",
+            "config_file": "mongo_config.json",
+            "description": "Validate MongoDB data"
+        }
+    ]
+}
